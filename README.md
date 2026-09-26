@@ -31,7 +31,7 @@ Please note that due to copyright restrictions we will not include any copyright
 Please put the PDFs to be parsed in the subdirectory: pdf
 
 - Run
-Open a terminal and start the executable: ./roll20_adv_json_exporter (on the `macOS` branch) or roll20_adv_json_exporter.exe (on Windows). On macOS you can alternatively double-click run-macOS.command in Finder, which opens a Terminal window and runs the tool for you (macOS Gatekeeper may ask you to confirm running it the first time, since it isn't code-signed/notarized).
+Open a terminal and start the executable: ./roll20_adv_json_exporter (on the `macOS` branch) or roll20_adv_json_exporter.exe (on Windows). On macOS you can alternatively double-click run-macOS.command in Finder, which opens a Terminal window and runs the tool for you (macOS Gatekeeper may ask you to confirm running it the first time, since it isn't code-signed/notarized). If run from the source repo without a build yet, run-macOS.command automatically publishes the project first (requires the .NET SDK) and reuses that build on subsequent runs; if run from an already-published folder, it just runs the executable directly.
 
 - Where to find the JSONs?
 The generated JSON and YAML files can be found in the subdirectory: out. The YAML files can be dropped straight into an Obsidian vault as notes.
