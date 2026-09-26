@@ -4,6 +4,8 @@ This little project aims to create JSON and YAML files for adversaries listed in
 
 > This is a fork of [bhuesemann/roll20-tor2e-adversary-json-export](https://github.com/bhuesemann/roll20-tor2e-adversary-json-export), maintained by [telimektar3](https://github.com/telimektar3/roll20-tor2e-adversary-json-export). All functionality through release 0.1.8 is the original work of bhuesemann; the YAML output and all newly-supported PDF sources starting with release 0.2.0 (see [CHANGELOG.md](CHANGELOG.md)) were added in this fork.
 
+> The `macOS` branch targets macOS (both Apple Silicon and Intel) by default instead of Windows, producing a native, self-contained executable that runs without a separate .NET install.
+
 Currently the following PDF files are supported:
 
 - Official TOR2e Core Rule Book
@@ -29,7 +31,7 @@ Please note that due to copyright restrictions we will not include any copyright
 Please put the PDFs to be parsed in the subdirectory: pdf
 
 - Run
-Execute open a cmd/powershell/terminal and start: roll20_adv_json_exporter.exe
+Open a terminal and start the executable: ./roll20_adv_json_exporter (on the `macOS` branch) or roll20_adv_json_exporter.exe (on Windows). On macOS you can alternatively double-click run-macOS.command in Finder, which opens a Terminal window and runs the tool for you (macOS Gatekeeper may ask you to confirm running it the first time, since it isn't code-signed/notarized).
 
 - Where to find the JSONs?
 The generated JSON and YAML files can be found in the subdirectory: out. The YAML files can be dropped straight into an Obsidian vault as notes.
